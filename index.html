@@ -44,6 +44,13 @@
         }
     }
 
+    function deleteItem(index) {
+        if (confirm('Are you sure you want to delete this item?')) {
+            data.splice(index, 1);
+            crudList();
+        }
+    }
+
 
     </script>
 
