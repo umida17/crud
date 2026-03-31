@@ -71,7 +71,14 @@
 
 
 
-    
+    document.addEventListener('DOMContentLoaded', function(){
+        const input = document.getElementById('itemInput');
+        input.addEventListener('keypress',function(e){
+            if(e.key === 'Enter'){
+                addItem();
+            }
+        });
+    });
 
 
     </script>
