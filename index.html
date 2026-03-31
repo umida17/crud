@@ -52,6 +52,17 @@
     }
 
 
+    function editItem(index) {
+        const newValue = prompt('Edit item', data[index]);
+        if (newValue !== null && newValue.trim() !== '') {
+            data[index] = newValue.trim();
+            crudList();
+        }else if(newValue !== null){
+            alert('Item cannot be empty!');
+        }
+    }
+
+
     </script>
 
     <script src="./main.js"></script>
