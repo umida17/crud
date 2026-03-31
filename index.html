@@ -32,7 +32,17 @@
     `).join("");
 }
 
-    
+    function addItem() {
+        const input = document.getElementById('itemInput');
+        if (input.value.trim()) {
+            data.push(input.value.trim());
+            input.value = "";
+            crudList();
+            
+        }else{
+            alert('Please enter an item!');
+        }
+    }
 
 
     </script>
